@@ -15,6 +15,78 @@ and reviewing/approving submissions with an audit trail.
 
 ---
 
+![Krishi Sathi Research dashboard](docs/images/02-dashboard.png)
+
+## Workflow
+
+```mermaid
+flowchart LR
+    R[Researcher] --> P[Participant / Farmer]
+    P --> I[Interview]
+    I --> O[Observation]
+    O --> C[Consent]
+    C --> V[Review]
+    V --> D[Research Record]
+```
+
+The research record moves from field capture to review/approval, with a
+role-based model (Research Lead, Editor, Contributor, Viewer) governing who can
+view, edit or approve each stage.
+
+## Screenshot Tour
+
+### Field Research Dashboard
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/02-dashboard.png" alt="Research dashboard" width="100%"></td>
+    <td width="50%"><img src="docs/images/12-mobile-dashboard.png" alt="Mobile dashboard" width="100%"></td>
+  </tr>
+</table>
+
+### Farmers &amp; Participants
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/03-farmers.png" alt="Farmer list" width="100%"></td>
+    <td width="50%"><img src="docs/images/04-farmer-profile.png" alt="Farmer profile" width="100%"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/images/05-participants.png" alt="Participants" width="100%"></td>
+    <td width="50%"><img src="docs/images/10-farm-profiles.png" alt="Farm profile" width="100%"></td>
+  </tr>
+</table>
+
+### Interview Workflow
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/06-interviews.png" alt="Interview list" width="100%"></td>
+    <td width="50%"><img src="docs/images/07-interview-detail.png" alt="Interview detail" width="100%"></td>
+  </tr>
+</table>
+
+### Consent &amp; Observations
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/08-observations.png" alt="Observations" width="100%"></td>
+    <td width="50%"><img src="docs/images/09-consent.png" alt="Consent tracking" width="100%"></td>
+  </tr>
+</table>
+
+### Research Review &amp; Access
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/images/11-research-review.png" alt="Research review" width="100%"></td>
+    <td width="50%"><img src="docs/images/13-users.png" alt="User &amp; role management" width="100%"></td>
+  </tr>
+</table>
+
+> Screenshots are captured from this sanitized demo edition using fictional
+demo data only. See [`docs/images/`](docs/images/) for the full set.
+
 ## Features
 
 - Role-based access: Research Lead, Editor, Contributor, Viewer
@@ -101,5 +173,6 @@ MIT — see [LICENSE](LICENSE).
 
 ## Related project
 
-**Phool Delivery** — Multi-Sided Commerce & Last-Mile Delivery Platform.
-Originally the same infrastructure; maintained as a separate repository.
+**[Phool Delivery](https://github.com/youvrajgit1432/phool-delivery-platform)**
+— Multi-Sided Commerce & Last-Mile Delivery Platform. Originally the same
+infrastructure; maintained as a separate repository.
